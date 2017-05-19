@@ -44,11 +44,18 @@ for your personal hatred.&quot;</textarea>
       </datalist>
   </div>
   
-  <button id="generate" onclick="event.preventDefault();draw(config(settings));">Generate!</button>
-</div>
+  <div id="last-fields">
+    <label for="aspectRatio">Dimensions</label>
+    <select id="aspectRatio">
+      <option value="standard" selected="">4:3</option>
+      <option value="wide">16:9</option>
+    </select>
+    <button id="generate" onclick="event.preventDefault();draw(config(settings));">Generate!</button>
+  </div>
+
 <canvas id="canvas" width="900" height="675"></canvas>
   
-    <script src="js/index.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 </html>
