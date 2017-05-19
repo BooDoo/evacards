@@ -1,0 +1,53 @@
+body {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  color: white;
+  background-color: #111111;
+}
+
+input, textarea, select, button {
+  font-weight: bold;
+  color:white;
+  background-color: black;
+}
+
+#input-container {
+  padding-top: 1em;
+  color: black;
+  background-color: red;
+  display: block;
+  width: 900px;
+  height: 7.5em;
+}
+
+#main-fields {
+  display: inline-block;
+  float: left;
+  clear: all;
+  padding-right:3em;
+}
+
+#title-fields {
+  clear:all;
+  float:left;
+}
+
+label {
+  font-weight: bold;
+  display: inline-block;
+  width: 7em;
+  vertical-align: top;
+  padding-bottom:0.3em;
+}
+
+textarea {
+  display: inline-block;
+  width: 22em;
+}
+
+#generate {
+  padding: 1em 2em;
+  margin: 5em 1em 1em 1em;
+  color: white;
+  display:block;
+  float:right;
+}

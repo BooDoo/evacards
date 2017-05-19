@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Evangelion Title Card in canvas</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="input-container">
+  <div id="main-fields">
+    <label for="topText">First Line</label>
+      <input id="topText" type="text" value="neon">
+    <br>
+    <label for="midText">Second Line</label>
+      <input id="midText" type="text" value="genesis">
+    <br>
+    <label for="botText">Third Line</label>
+      <input id="botText" type="text" value="evangelion">
+    <br>
+    <label for="epText">"EPISODE"</label>
+      <input id="epText" type="text" value="episode:12">
+  </div>
+
+  <div id="title-fields">
+    <label for="titleText">Title Line</label>
+      <textarea id="titleText" type="textarea">She said,&quot;Don't make others suffer for your personal hatred.&quot;</textarea>
+    <br>
+    <label for="titleStyle">Title Font</label>
+      <select id="titleStyle">
+        <option value="serif" selected>Serif</option>
+        <option value="sans">Sans Serif</option>
+      </select>
+    <br>
+    <label for="titleAlign">Title Aligned</label>
+      <input id="titleAlign" type="text" value="left"
+     list="alignments" />
+      <datalist id="alignments">
+        <option value="left">left</option>
+        <option value="right">right</option>
+        <option value="center">center</option>
+      </datalist>
+  </div>
+  
+  <button id="generate" onclick="event.preventDefault();draw(config(settings));">Generate!</button>
+</div>
+<canvas id="canvas" width="900" height="675"></canvas>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
