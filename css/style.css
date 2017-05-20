@@ -1,10 +1,23 @@
+@font-face {
+  font-family: "MySerif";
+  src: local("ヒラギノ明朝 Pro W6"), local("Hiragino Mincho Pro W6"),
+    local("Times New Roman"),local("Times Roman"),local("Times"),
+    url("assets/times-roman.woff");
+}
+
+@font-face {
+  font-family: "MySans";
+  src: local("Helvetica Neue"),local("HelveticaNeue"),url("assets/helveticaneue.woff");
+}
+
 body {
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family: MySans, sans-serif;
   color: white;
   background-color: #111111;
 }
 
 input, textarea, select, button {
+  font-family: MySerif, serif;
   font-weight: bold;
   color:white;
   background-color: black;
@@ -32,6 +45,13 @@ input, textarea, select, button {
   padding-right:1em;
 }
 
+#generate {
+  padding: 1em 3em;
+  margin: 1em 1em 1em 1em;
+  color: white;
+  display:block;
+}
+
 label {
   font-weight: bold;
   display: inline-block;
@@ -43,11 +63,4 @@ label {
 textarea {
   display: inline-block;
   width: 22em;
-}
-
-#generate {
-  padding: 1em 3em;
-  margin: 1em 1em 1em 1em;
-  color: white;
-  display:block;
 }
