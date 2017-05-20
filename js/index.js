@@ -79,15 +79,15 @@ function draw(config) {
   ctx.strokeStyle = "#FFFFFF";
   ctx.textBaseline = "top";
   // Top two lines
-  ctx.font = `900 ${smHeadSize}px Times New Roman`;
+  ctx.font = `900 ${smHeadSize}px MySerif`;
   addText(topText, 50, topSquash);
   addText(midText, 150, midSquash);
   // Bigger third line
-  ctx.font = `900 ${lgHeadSize}px Times New Roman`;
+  ctx.font = `900 ${lgHeadSize}px MySerif`;
   addText(botText, 239, botSquash);
 
   // Change font for EPISODE: label
-  ctx.font = `700 ${epSize}px Helvetica Neue,Helvetica,sans-serif`;
+  ctx.font = `700 ${epSize}px MySans`;
   addText(epText, 430, epSquash);
   
   // Change font for Title
@@ -99,12 +99,12 @@ function draw(config) {
 let titleStyles = {
   sans: {
     weight: 800,
-    family: `Helvetica Neue,Helvetica,sans-serif`,
+    family: `MySans`,
     squash: 0.8
   },
   serif: {
     weight: 600,
-    family: `Times New Roman,serif`,
+    family: `MySerif`,
     squash: 0.76
   }
 }
