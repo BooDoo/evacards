@@ -2,12 +2,12 @@
   font-family: "MySerif";
   src: local("ヒラギノ明朝 Pro W6"), local("Hiragino Mincho Pro W6"),
     local("Times New Roman"),local("Times Roman"),local("Times"),
-    url("assets/times-roman.woff");
+    url("/assets/times-roman.woff");
 }
 
 @font-face {
   font-family: "MySans";
-  src: local("Helvetica Neue"),local("HelveticaNeue"),url("assets/helveticaneue.woff"),
+  src: local("Helvetica Neue"),local("HelveticaNeue"),url("/assets/helveticaneue.woff"),
     local("Helvetica"),local("sans-serif");
 }
 
