@@ -93,7 +93,8 @@ function draw(config) {
   // Change font for Title
   titleStyle = titleStyles[titleStyle];
   ctx.font = `${titleStyle.weight} ${titleSize}px ${titleStyle.family}`;
-  addText(titleText, 530, titleStyle.squash, titleAlign); 
+  addText(titleText, 530, titleStyle.squash, titleAlign);
+  stackBlurCanvasRGBA('canvas', 0, 0, 900, 675, 1);
 }
 
 let titleStyles = {
@@ -151,3 +152,6 @@ function addFittedText(ctx, config, text, y, squash=1, align='left', maxWidth=74
 }
 
 draw(config(settings));
+setTimeout(function() {
+  return draw(config(settings));
+}, 100);
